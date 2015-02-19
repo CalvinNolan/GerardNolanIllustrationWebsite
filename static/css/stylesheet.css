@@ -1,0 +1,324 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+header {
+	display: block;
+	height:120px;
+	text-align:center;
+	min-width:1100px;
+}
+
+ul.logo{
+	display:inline-block;
+	padding-top:18px;
+}
+
+ul.logo li{
+	display:inline-block;
+	font-size:1.1em;
+	vertical-align:middle;
+}
+
+ul.logo img{
+	width:60px;
+}
+
+ul.logo h3{
+	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-weight:400;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+/* End Header */
+
+/* About Centerpiece */
+
+section{
+}
+
+.aboutWrapper{
+	width:1100px;
+	margin: 0 auto;
+}
+
+.aboutWrapper p{
+
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:50px;
+	margin-top:40px;
+
+	width:500px;
+
+
+	font-size:1.1em;
+	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-weight:400;
+	letter-spacing: 1px;
+	word-spacing:2px;
+	line-height:28px;
+}
+
+/* Contact Centerpiece */
+
+.contactWrapper{
+	width:1100px;
+	margin:0 auto;
+}
+
+.contactWrapper p{
+	margin-right:auto;
+	margin-left:auto;
+
+	width:360px;
+
+	font-size:1.1em;
+	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-weight:400;
+	letter-spacing:2px;
+	word-spacing:3px;
+	line-height:13px;
+}
+
+.contactWrapper form{
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:40px;
+	margin-top:30px;
+
+	width:400px;
+}
+
+.contactInfo{
+	margin-top:50px;
+	padding-left:40px;
+}
+
+.contactPhone{
+	margin-top:40px;
+}
+
+.contactWrapper #inputField input{
+	margin-bottom:12px;
+	background-color:#edede4;
+}
+
+.contactWrapper textarea{
+	margin-bottom:12px;
+	background-color:#edede4;
+	resize:none;
+}
+/* Index Centerpiece */
+
+.container {
+   min-height:100%;
+   position:relative;
+}
+
+section {
+	display:block;
+	margin-bottom:20px;
+}
+
+.wrapper{
+	width:1100px;
+	margin:0 auto;
+}
+
+.WishKindleWrapper{
+	width:1350px;
+	margin:0 auto;
+}
+
+#artworkBody {
+	display:block;
+	margin-top:10px;
+}
+
+#artworkBody .row:after{
+	content: "";
+	display:block;
+	clear:both;
+}
+
+#artworkBody .column{
+	width: 19%;
+	float:left;
+	margin-top:20px;
+	margin-right:32px;
+}
+
+#artworkBody .centerColumn{
+	display:block;
+	width:55%;
+	float:left;
+
+	margin-top:30px;
+	margin-right:30px;
+	padding-left:15px;
+}
+
+#artworkBody .column:last-child{
+	margin-right: 0;
+}
+
+#artworkBody img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#artworkBody h3{
+
+	font-size:1.5em;
+	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-weight:400;
+	letter-spacing: 3px;
+	padding-bottom:15px;
+}
+
+#artworkBody p{
+	font-size:1.1em;
+	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-weight:400;
+	letter-spacing: 2px;
+	font-style:italic;
+}
+
+#artworkBody .column #diamondThumbnail img{
+	display: block;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:30px;
+
+	width: 100px;
+
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+
+	border-style: solid;
+	border-width: 1px;
+	border-color:#e0e0e0;
+}
+
+#artworkBody .column #rectangleThumbnail img{
+	display: block;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:30px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color:#edede4;
+}
+
+#artworkBody .column a{
+	text-decoration:none;
+}
+
+#artworkBody .column #rectangleThumbnail p{
+	text-align:center;
+	color:#a0a0a0;
+}
+
+#artworkBody .column #diamondThumbnail img:hover{
+	border-style: solid;
+	border-width: 1px;
+	border-color:#202020;
+}
+
+#artworkBody .column #rectangleThumbnail img:hover{
+	border-style: solid;
+	border-width: 1px;
+	border-color:#202020;
+}
+
+
+/* Background */
+.jumbotron {
+	background: url("/static/images/Background.jpg");
+	background-size:auto 500px;
+	background-repeat:repeat-x;
+	min-width:1100px;
+	height:440px;
+	margin:0px;
+} 
+
+.jumbotronSmall {
+	background: url("/static/images/Background.jpg");
+	background-size:auto 500px;
+	background-repeat:repeat-x;
+	min-width:1100px;
+	height:70px;
+	margin:0px;
+}
+
+/* Top Navigation */
+.nav{
+	text-align:center;
+	height:40px;
+	min-width:1100px;
+}
+
+.nav li{
+	line-height:65px;
+	display: inline;
+	padding-left: 20px;
+	padding-right:20px;
+}
+
+.nav a{
+	font-size:1.3em;
+	color:#202020;
+	text-decoration:none;
+	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-weight:400;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.nav a:hover{
+	font-size:1.3em;
+	color:#ffffff;
+	text-decoration:none;
+	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-weight:400;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.nav #currentPage a{
+	color:#fefefe;
+}
+
+/* End Centerpiece */
+/* Footer */
+footer{
+	display: block;
+	height:120px;
+	text-align:center;
+	min-width:1100px;
+}
+
+ul.social{	
+	display:inline-block;
+}
+
+ul.social li{
+	display:inline-block;
+}
+
+ul.social img{
+	padding-left:5px;
+	padding-right:5px;
+	margin-bottom:10px;
+	margin-top:10px;
+	width:60px;
+}
