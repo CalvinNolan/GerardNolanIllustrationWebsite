@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 3000;
+var port = parseInt(process.argv[2], 10);
 
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
@@ -68,11 +68,11 @@ app.get('/Oscar', function(req, res) {
 });
 
 app.get('/Prison', function(req, res) {
-	res.render('prison.html');
+	res.render('Prison.html');
 });
 
 app.get('/Tabby', function(req, res) {
-	res.render('tabby.html');
+	res.render('Tabby.html');
 });
 
 app.get('/TabbyTypography', function(req, res) {
