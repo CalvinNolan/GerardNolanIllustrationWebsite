@@ -27,7 +27,7 @@ ul.logo img{
 }
 
 ul.logo h3{
-	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
 	font-weight:400;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -55,7 +55,7 @@ section{
 
 
 	font-size:1.1em;
-	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
 	font-weight:400;
 	letter-spacing: 1px;
 	word-spacing:2px;
@@ -76,7 +76,7 @@ section{
 	width:360px;
 
 	font-size:1.1em;
-	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
 	font-weight:400;
 	letter-spacing:2px;
 	word-spacing:3px;
@@ -104,12 +104,14 @@ section{
 .contactWrapper #inputField input{
 	margin-bottom:12px;
 	background-color:#edede4;
+	width: 340px;
 }
 
 .contactWrapper textarea{
 	margin-bottom:12px;
 	background-color:#edede4;
 	resize:none;
+	width: 340px;
 }
 /* Index Centerpiece */
 
@@ -174,7 +176,7 @@ section {
 #artworkBody h3{
 
 	font-size:1.5em;
-	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
 	font-weight:400;
 	letter-spacing: 3px;
 	padding-bottom:15px;
@@ -182,7 +184,7 @@ section {
 
 #artworkBody p{
 	font-size:1.1em;
-	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
 	font-weight:400;
 	letter-spacing: 2px;
 	font-style:italic;
@@ -278,7 +280,7 @@ section {
 	font-size:1.3em;
 	color:#202020;
 	text-decoration:none;
-	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
 	font-weight:400;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -288,7 +290,7 @@ section {
 	font-size:1.3em;
 	color:#ffffff;
 	text-decoration:none;
-	font-family:'Gill Sans', 'Lato', sans-serif;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
 	font-weight:400;
 	text-transform: uppercase;
 	letter-spacing: 3px;
