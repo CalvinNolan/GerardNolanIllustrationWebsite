@@ -16,7 +16,7 @@ var transporter = nodemailer.createTransport({
 });
 
 
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 app.use(bodyParser());
 app.use('/static', express.static(__dirname + '/static'));
 app.engine('.html', require('ejs').__express);
@@ -108,7 +108,7 @@ app.post('/html_form_send', function(req, res) {
 	{
 		var mailOptions = {
 		    from: 'GN Illustration: ' + body.name, // sender address
-		    to: 'calvinnolan@gmail.com', // list of receivers
+		    to: 'gtnolan@gmail.com', // list of receivers
 		    subject: body.subject, // Subject line
 		    text: 'text', // plaintext body
 		    html: "<p>Message from: " + body.name + "</p>" 

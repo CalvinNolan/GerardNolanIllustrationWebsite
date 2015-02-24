@@ -150,7 +150,8 @@ section {
 	width: 19%;
 	float:left;
 	margin-top:20px;
-	margin-right:32px;
+	margin-right:22px;
+	margin-left:10px;
 }
 
 #artworkBody .centerColumn{
@@ -165,6 +166,7 @@ section {
 
 #artworkBody .column:last-child{
 	margin-right: 0;
+	margin-left: 0;
 }
 
 #artworkBody img {
