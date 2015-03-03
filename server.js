@@ -1,3 +1,6 @@
+//Created by Calvin Nolan
+//With help from Conor Brennan (https://github.com/c-brenn), Eoin Houlihan (https://github.com/houli) and Ian Connolly (https://github.com/IanConnolly)
+
 var express = require('express');
 var app = express();
 var port = parseInt(process.argv[2], 10);
@@ -15,8 +18,9 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-
+//Uncomment the next line to see all requests to the server in the console.
 //app.use(morgan('dev'));
+
 app.use(bodyParser());
 app.use('/static', express.static(__dirname + '/static'));
 app.engine('.html', require('ejs').__express);
@@ -99,6 +103,7 @@ app.get('/ThreeKingsOuter', function(req, res) {
 	res.render('3KingsOuter.html');
 });
 
+//Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
 	console.log(body.email);

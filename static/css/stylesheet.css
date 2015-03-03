@@ -32,10 +32,8 @@ ul.logo h3{
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
-/* End Header */
 
 /* About Centerpiece */
-
 section{
 }
 
@@ -63,7 +61,6 @@ section{
 }
 
 /* Contact Centerpiece */
-
 .contactWrapper{
 	width:1100px;
 	margin:0 auto;
@@ -302,7 +299,6 @@ section {
 	color:#fefefe;
 }
 
-/* End Centerpiece */
 /* Footer */
 footer{
 	display: block;
