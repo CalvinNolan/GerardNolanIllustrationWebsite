@@ -103,11 +103,6 @@ app.get('/ThreeKingsOuter', function(req, res) {
 	res.render('3KingsOuter.html');
 });
 
-
-app.get('/google585697b19246fb65.html', function(req, res) {
-	res.render('google585697b19246fb65.html');
-});
-
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
