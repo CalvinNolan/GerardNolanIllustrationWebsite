@@ -103,6 +103,10 @@ app.get('/ThreeKingsOuter', function(req, res) {
 	res.render('3KingsOuter.html');
 });
 
+app.get('/Smedley', function(req, res) {
+	res.render('Smedley.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
