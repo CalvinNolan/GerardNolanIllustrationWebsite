@@ -107,6 +107,10 @@ app.get('/Smedley', function(req, res) {
 	res.render('Smedley.html');
 });
 
+app.get('/TabbyRockingHorse', function(req, res) {
+	res.render('TabbyRockingHorseSpread.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
