@@ -10,7 +10,7 @@
  //1) Set width of the "neutral" area in the center of the gallery.
 var restarea=500;
  //2) Set top scroll speed in pixels. Script auto creates a range from 0 to top speed.
-var maxspeed=3;
+var maxspeed=4;
  //3) Set to maximum width for gallery - must be less than the actual length of the image train.
 var maxwidth=3000;
  //4) Set to 1 for left start, 0 for right, 2 for center.

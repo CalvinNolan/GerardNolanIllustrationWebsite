@@ -111,6 +111,22 @@ app.get('/TabbyRockingHorse', function(req, res) {
 	res.render('TabbyRockingHorseSpread.html');
 });
 
+app.get('/JamesJoyce', function(req, res) {
+	res.render('JamesJoyce.html');
+});
+
+app.get('/May22nd', function(req, res) {
+	res.render('May22nd.html');
+});
+
+app.get('/Bunboozle', function(req, res) {
+	res.render('Bunboozle.html');
+});
+
+app.get('/BunboozleCarousel', function(req, res) {
+	res.render('BunboozleCarousel.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
