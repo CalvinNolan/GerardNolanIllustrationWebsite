@@ -127,6 +127,10 @@ app.get('/BunboozleCarousel', function(req, res) {
 	res.render('BunboozleCarousel.html');
 });
 
+app.get('/ASadState', function(req, res) {
+	res.render('ASadState.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
