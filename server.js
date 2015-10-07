@@ -131,6 +131,10 @@ app.get('/ASadState', function(req, res) {
 	res.render('ASadState.html');
 });
 
+app.get('/RainbowPants', function(req, res) {
+	res.render('RainbowPants.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
