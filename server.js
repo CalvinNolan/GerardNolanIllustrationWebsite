@@ -135,6 +135,14 @@ app.get('/RainbowPants', function(req, res) {
 	res.render('RainbowPants.html');
 });
 
+app.get('/JonathanSwift', function(req, res) {
+	res.render('JonathanSwift.html');
+});
+
+app.get('/WBYeats', function(req, res) {
+	res.render('WBYeats.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
