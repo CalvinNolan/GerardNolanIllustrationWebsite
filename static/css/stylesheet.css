@@ -306,6 +306,90 @@ section {
 	color:#fefefe;
 }
 
+.shopCenter {
+	width: 75%;
+
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+.shopInfo {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.shopInfo p {
+	font-size:1.5em;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
+	font-weight:400;
+	margin-bottom:5px;
+	margin-top: 40px;
+
+	color:#c6c6b5;
+}
+
+.shopInfo a {
+	text-decoration: none;
+	color: #c6c6b5;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color:#a4a48a;
+}
+
+.shopInfo a:hover {
+	color:#a4a48a;
+	border-bottom-color:#080808;
+}
+
+.shopItems td {
+	width: 500px;
+	padding-top: 40px;
+}
+
+.shopItems img {	
+	border-style: solid;
+	border-width: 1px;
+	border-color:#edede4;
+
+}
+
+.shopItems img:hover {
+	border-style: solid;
+	border-width: 1px;
+	border-color:#202020;
+}
+
+.shopItems td h3 {
+	font-size:1.2em;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
+	font-weight:400;
+	letter-spacing: 2px;
+	margin-top: 20px;
+}
+
+.shopItems td h4 {
+	font-size:.7em;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
+	font-weight:200;
+	letter-spacing: 2px;
+	margin-top:-5px;
+}
+
+.shopItems td p {
+	font-size:1.2em;
+	font-family: GillSansWGL, 'Gill Sans', 'Lato';
+	font-weight:500;
+	letter-spacing: 5px;
+	margin-top: -4px;
+}
+
+.printInfo {
+	text-align: left;
+	margin-left: 48px;
+	margin-top: 24px;
+}
+
 /* Footer */
 footer{
 	display: block;
