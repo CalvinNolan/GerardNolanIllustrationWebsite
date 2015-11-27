@@ -39,10 +39,6 @@ app.get('/About', function(req, res) {
 	res.render('about.html');
 });
 
-app.get('/Shop', function(req, res) {
-	res.render('Shop.html');
-});
-
 app.get('/Aras', function(req, res) {
 	res.render('Aras.html');
 });
