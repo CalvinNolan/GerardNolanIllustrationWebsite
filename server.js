@@ -7,16 +7,7 @@ var port = parseInt(process.argv[2], 10);
 
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
-var nodemailer = require('nodemailer');
-
-// create reusable transporter object using SMTP transport
-var transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS
-    }
-});
+var helper = require('sendgrid').mail
 
 //Uncomment the next line to see all requests to the server in the console.
 //app.use(morgan('dev'));
@@ -146,32 +137,24 @@ app.get('/BramStoker', function(req, res) {
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
-	console.log(body.email);
 
-	// setup e-mail data with unicode symbols
-	if(body.email != "" && body.name != "" && body.message != "")
-	{
-		var mailOptions = {
-		    from: 'GN Illustration: ' + body.name, // sender address
-		    to: 'gtnolan@gmail.com', // list of receivers
-		    subject: body.subject, // Subject line
-		    text: 'text', // plaintext body
-		    html: "<p>Message from: " + body.name + "</p>" 
-		    	+ "<p>Email address: " + body.email + "</p>" 
-		    	+ "<p>Subject: " + body.subject + "</p>" 
-		    	+ "<p>Message: " + body.message + "</p>"// html body
-		};
-		// send mail with defined transport object
-		transporter.sendMail(mailOptions, function(error, info){
-		    if(error){
-		        console.log(error);
-		    }else{
-		        console.log('Message sent: ' + info.response);
-		    }
-		});
-	}
+	from_email = new helper.Email(body.email);
+	to_email = new helper.Email("gerardnolanillustration@gmail.com");
+  	subject = body.name + ": " + body.subject;
+  	content = new helper.Content("text/plain", body.message)
+  	mail = new helper.Mail(from_email, subject, to_email, content)
 
-	
+  	var sg = require('sendgrid').SendGrid(process.env.SENDGRID_API_KEY);
+  	var requestBody = mail.toJSON();
+  	var request = sg.emptyRequest();
+  	request.method = 'POST';
+  	request.path = '/v3/mail/send';
+  	request.body = requestBody;
+  	sg.API(request, function (response) {
+  	  console.log(response.statusCode)
+  	  console.log(response.body)
+  	  console.log(response.headers)
+  	});
 
 	res.redirect('/contact');
 });
