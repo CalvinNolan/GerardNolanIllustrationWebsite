@@ -115,10 +115,6 @@ app.get('/JamesJoyce', function(req, res) {
 	res.render('JamesJoyce.html');
 });
 
-app.get('/May22nd', function(req, res) {
-	res.render('May22nd.html');
-});
-
 app.get('/Bunboozle', function(req, res) {
 	res.render('Bunboozle.html');
 });
@@ -141,6 +137,10 @@ app.get('/JonathanSwift', function(req, res) {
 
 app.get('/WBYeats', function(req, res) {
 	res.render('WBYeats.html');
+});
+
+app.get('/BramStoker', function(req, res) {
+	res.render('BramStoker.html');
 });
 
 //Auto-mailer for the Contact form.
