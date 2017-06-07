@@ -134,6 +134,26 @@ app.get('/BramStoker', function(req, res) {
 	res.render('BramStoker.html');
 });
 
+app.get('/PeekAndBoo', function(req, res) {
+  res.render('PeekAndBoo.html');
+});
+
+app.get('/PeekAndBooMouse', function(req, res) {
+  res.render('PeekAndBooMouse.html');
+});
+
+app.get('/PeekAndBooBaboon', function(req, res) {
+  res.render('PeekAndBooBaboon.html');
+});
+
+app.get('/PeekAndBooSun', function(req, res) {
+  res.render('PeekAndBooSun.html');
+});
+
+app.get('/PeekAndBooBus', function(req, res) {
+  res.render('PeekAndBooBus.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;

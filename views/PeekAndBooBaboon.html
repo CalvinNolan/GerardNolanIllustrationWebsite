@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Created by Calvin Nolan. Designed by Calvin and Gerard Nolan -->
+<html lang="en">
+
+	<head>
+		
+		<!-- ****** faviconit.com favicons ****** -->
+		<link rel="shortcut icon" href="/static/images/faviconit/favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="/static/images/faviconit/favicon.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="/static/images/faviconit/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="/static/images/faviconit/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/static/images/faviconit/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="/static/images/faviconit/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/static/images/faviconit/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/static/images/faviconit/favicon-16.png">
+		<link rel="apple-touch-icon" href="/static/images/faviconit/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/static/images/faviconit/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/static/images/faviconit/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/static/images/faviconit/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/static/images/faviconit/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/static/images/faviconit/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/static/images/faviconit/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/static/images/faviconit/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/faviconit/favicon-180.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="/static/images/faviconit/favicon-144.png">
+		<meta name="msapplication-config" content="/static/images/faviconit/browserconfig.xml">
+		<!-- ****** faviconit.com favicons ****** -->
+
+		<title>Peek and Boo</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css" />
+		
+		<link rel="stylesheet" type="text/css" href="/static/css/MyFontsWebfontsKit.css">	
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-66371085-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				
+				<ul class="logo">
+					<li><h3>Gerard Nolan</h3></li>
+					<li id="centericon"><a href="/"><img src="/static/images/LogoMaster.jpg" alt="GNolan Logo"/></a></li>		 
+					<li><h3>Illustration</h3></li>
+				</ul>
+				
+			</header>
+
+			<div class="jumbotronSmall">
+				
+				<div class="nav">
+					<ul>
+						<li><a href="/">Work</a></li>
+						<li><a href="/contact">Contact</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a target="_blank" href="https://www.artfinder.com/artist/gerard-nolan/artworks/category/all-artworks/">Store</a></li>	
+					</ul>
+				</div>
+			</div>
+
+			<section>
+				<div class="wrapper" id="artworkBody">
+					<div class="row">
+						<div class="column">
+							<h3>Peek and Boo</h3>
+							<p>Click on spread to open and close.</p>
+						</div>
+
+						<div class="centerColumn closedSpread">
+							<img src="/static/images/masters/PeekAndBooBaboon.jpg" height="300" style="cursor:pointer; margin-left: 30px;"/>
+						</div>
+
+						<div class="centerColumn openSpread">
+							<img src="/static/images/masters/PeekAndBooBaboonOpen.jpg" height="300" style="cursor:pointer; margin-left: 30px;"/>
+						</div>
+
+						<div class="column">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<script>
+			$(".openSpread").css("display", "none");
+
+			$(".closedSpread").click(function () {
+				$(".closedSpread").css("display", "none");
+				$(".openSpread").css("display", "");
+			});
+
+			$(".openSpread").click(function () {
+				$(".openSpread").css("display", "none");
+				$(".closedSpread").css("display", "");
+			});
+
+			</script>
+
+			<div class="subNav">
+				<ul>
+					<li>
+						<a href="/PeekAndBoo">
+							<img src="/static/images/thumbnails/PeekAndBooCoverThumbnail.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="/PeekAndBooMouse">
+							<img src="/static/images/thumbnails/PeekAndBooMouseThumbnail.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="/PeekAndBooSun">
+							<img src="/static/images/thumbnails/PeekAndBooSunThumbnail.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="/PeekAndBooBus">
+							<img src="/static/images/thumbnails/PeekAndBooBusThumbnail.jpg" />
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<footer>
+				<ul class="social">
+					<li>
+						<a href="http://facebook.com/pages/Gerard-Nolan-Illustration/882291668489293" id="facebook">
+							<img src="/static/images/Facebook.jpg" alt="GNolan Logo"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://twitter.com/GN_illustration" id="twitter">
+							<img src="/static/images/Twitter.jpg" alt="GNolan Logo"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://ie.linkedin.com/pub/gerard-nolan/80/864/b44" id="linkedin">
+							<img src="/static/images/LinkedIn.jpg" alt="GNolan Logo"/>
+						</a>
+					</li>
+				</ul>
+			</footer>
+
+		</div>
+
+	</body>
+
+</html>
