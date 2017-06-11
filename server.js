@@ -154,6 +154,10 @@ app.get('/PeekAndBooBus', function(req, res) {
   res.render('PeekAndBooBus.html');
 });
 
+app.get('/Wrensong', function(req, res) {
+  res.render('Wrensong.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;

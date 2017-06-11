@@ -39,6 +39,7 @@ section{
 
 .aboutWrapper{
 	width:1100px;
+
 	margin: 0 auto;
 }
 
@@ -58,6 +59,16 @@ section{
 	letter-spacing: 1px;
 	word-spacing:2px;
 	line-height:28px;
+}
+
+.aboutWrapper img{
+	display: block;
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:50px;
+	margin-top:40px;
+
+	width:500px;
 }
 
 /* Contact Centerpiece */
