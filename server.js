@@ -158,6 +158,10 @@ app.get('/Wrensong', function(req, res) {
   res.render('Wrensong.html');
 });
 
+app.get('/Harley', function(req, res) {
+  res.render('Harley.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
