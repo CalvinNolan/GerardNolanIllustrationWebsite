@@ -18,7 +18,7 @@
   "homepage": "https://github.com/CalvinNolan/Calvinnolan.github.io",
   "dependencies": {
     "body-parser": "^1.12.0",
-    "ejs": "^2.2.4",
+    "ejs": "^2.5.5",
     "express": "^4.11.2",
     "jade": "^1.9.2",
     "morgan": "^1.5.1",
