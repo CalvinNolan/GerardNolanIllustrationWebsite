@@ -162,6 +162,22 @@ app.get('/Harley', function(req, res) {
   res.render('Harley.html');
 });
 
+app.get('/Skribble', function(req, res) {
+  res.render('Skribble.html');
+});
+
+app.get('/SkribbleCroc', function(req, res) {
+  res.render('SkribbleCroc.html');
+});
+
+app.get('/SkribbleDino', function(req, res) {
+  res.render('SkribbleDino.html');
+});
+
+app.get('/SkribbleSpace', function(req, res) {
+  res.render('SkribbleSpace.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
