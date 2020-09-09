@@ -178,6 +178,18 @@ app.get('/SkribbleSpace', function(req, res) {
   res.render('SkribbleSpace.html');
 });
 
+app.get('/RainbrowBoy', function(req, res) {
+  res.render('RainbrowBoy.html');
+});
+
+app.get('/RainbrowChair', function(req, res) {
+  res.render('RainbrowChair.html');
+});
+
+app.get('/RainbrowRabbit', function(req, res) {
+  res.render('RainbrowRabbit.html');
+});
+
 //Auto-mailer for the Contact form.
 app.post('/html_form_send', function(req, res) {
 	var body = req.body;
